@@ -1,0 +1,6 @@
+<button class="responsive long" *ngFor="let longButton of longButtons" (click)="addToExpression(longButton)">
+    {{longButton}}
+</button>
+<button class="responsive" *ngFor="let button of buttons" (click)="addToExpression(button)">
+    {{button}}
+</button>

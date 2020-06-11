@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculator-body',
@@ -11,5 +11,12 @@ export class CalculatorBodyComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  result : string = ''
+  receiveResult($event){
+    this.result = $event
+  }
+
+
+  
 
 }

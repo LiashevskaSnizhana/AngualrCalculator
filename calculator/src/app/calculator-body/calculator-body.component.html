@@ -1,1 +1,9 @@
-<p>calculator-body works!</p>
+<div class="calculator">
+    <h1>Calculator</h1>
+ <div>
+    <input class="result" type="text" readonly value="{{result}}">
+ </div>
+ <div>
+    <app-buttons (sendResult) = "receiveResult($event)"></app-buttons>
+ </div>
+</div>
